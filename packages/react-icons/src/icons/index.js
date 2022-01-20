@@ -45,9 +45,9 @@ module.exports = {
       name: "Ionicons 5",
       contents: [
         {
-          files: path.resolve(
-            __dirname,
-            "../../../../node_modules/ionicons-5/dist/svg/*.svg"
+         files: path.resolve(
+            path.dirname(require.resolve("ionicons-5")),
+            "svg/*.svg"
           ),
           formatter: (name) => `Io${name}`,
           processWithSVGO: true,

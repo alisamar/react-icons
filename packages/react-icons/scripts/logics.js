@@ -1,4 +1,4 @@
-const cheerio = require("cheerio");
+const cheerio = require("cheerio").default;
 const glob = require("glob-promise");
 const camelcase = require("camelcase");
 const fs = require("fs").promises;

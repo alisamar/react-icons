@@ -173,8 +173,8 @@ async function buildLib({ DIST, LIB, rootDir }) {
     cwd: rootDir,
   };
   await Promise.all([
-    exec("yarn tsc && yarn babel ./build/lib/esm -d ./build/lib/esm", execOpt),
-    exec("yarn tsc -p ./tsconfig.commonjs.json", execOpt),
+    exec("npx tsc && npx babel ./build/lib/esm -d ./build/lib/esm", execOpt),
+    exec("npx tsc -p ./tsconfig.commonjs.json", execOpt),
   ]);
 }
 
